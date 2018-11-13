@@ -38,8 +38,8 @@
               <i class="nc-icon nc-vector text-danger"></i>
             </div>
             <div slot="content">
-              <p class="card-category">Errors</p>
-              <h4 class="card-title">23</h4>
+              <p class="card-category">Not Responding</p>
+              <h4 class="card-title">4</h4>
             </div>
             <div slot="footer">
               <i class="fa fa-clock-o"></i>Last day
