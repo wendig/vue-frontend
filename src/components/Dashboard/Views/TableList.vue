@@ -5,8 +5,8 @@
         <div class="col-12">
           <card>
             <template slot="header">
-              <h4 class="card-title">Striped Table with Hover</h4>
-              <p class="card-category">Here is a subtitle for this table</p>
+              <h4 class="card-title">Sum of revenue every hour</h4>
+              <p class="card-category">Estimation based on produced H2</p>
             </template>
             <div class="table-responsive">
               <l-table class="table-hover table-striped"
@@ -40,41 +40,72 @@
 <script>
   import LTable from 'src/components/UIComponents/Table.vue'
   import Card from 'src/components/UIComponents/Cards/Card.vue'
-  const tableColumns = ['Id', 'Name', 'Salary', 'Country', 'City']
+  const tableColumns = ['Id', 'Time', 'Revenue', 'Diff_from_Yesterday', 'City']
   const tableData = [{
     id: 1,
-    name: 'Dakota Rice',
-    salary: '$36.738',
-    country: 'Niger',
+    time: '9 am',
+    revenue: '$36.738',
+    diff_from_yesterday: '2 %',
     city: 'Oud-Turnhout'
   },
   {
     id: 2,
-    name: 'Minerva Hooper',
-    salary: '$23,789',
-    country: 'Curaçao',
+    time: '10 am',
+    revenue: '$23,789',
+    diff_from_yesterday: '3 %',
     city: 'Sinaai-Waas'
   },
   {
     id: 3,
-    name: 'Sage Rodriguez',
-    salary: '$56,142',
-    country: 'Netherlands',
+    time: '11 am',
+    revenue: '$56,142',
+    diff_from_yesterday: '10 %',
     city: 'Baileux'
   },
   {
     id: 4,
-    name: 'Philip Chaney',
-    salary: '$38,735',
-    country: 'Korea, South',
+    time: '12 am',
+    revenue: '$38,735',
+    diff_from_yesterday: '1 %',
     city: 'Overland Park'
   },
   {
     id: 5,
-    name: 'Doris Greene',
-    salary: '$63,542',
-    country: 'Malawi',
+    time: '13 pm',
+    revenue: '$63,542',
+    diff_from_yesterday: '0 %',
     city: 'Feldkirchen in Kärnten'
+  }]
+  const tableColumns2 = ['Id', 'Time', 'Average_active_H2_Station']
+  const tableData2 = [{
+    id: 1,
+    time: '9 am',
+    revenue: '$36.738',
+    average_active_h2_station: '120'
+  },
+  {
+    id: 2,
+    time: '10 am',
+    revenue: '$23,789',
+    average_active_h2_station: '300'
+  },
+  {
+    id: 3,
+    time: '11 am',
+    revenue: '$56,142',
+    average_active_h2_station: '20'
+  },
+  {
+    id: 4,
+    time: '12 am',
+    revenue: '$38,735',
+    average_active_h2_station: '70'
+  },
+  {
+    id: 5,
+    time: '13 pm',
+    revenue: '$63,542',
+    average_active_h2_station: '110'
   }]
   export default {
     components: {
@@ -88,8 +119,8 @@
           data: [...tableData]
         },
         table2: {
-          columns: [...tableColumns],
-          data: [...tableData]
+          columns: [...tableColumns2],
+          data: [...tableData2]
         }
       }
     }
