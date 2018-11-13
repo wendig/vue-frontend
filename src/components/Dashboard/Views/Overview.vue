@@ -115,7 +115,7 @@
             :chart-responsive-options="barChart.responsiveOptions"
             chart-type="Bar">
             <template slot="header">
-              <h4 class="card-title">2014 Profit Summary</h4>
+              <h4 class="card-title">2018 Profit Summary</h4>
               <p class="card-category">All profit including Taxes</p>
             </template>
             <template slot="footer">
