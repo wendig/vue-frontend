@@ -45,31 +45,31 @@
     id: 1,
     time: '9 am',
     revenue: '$36.738',
-    diff_from_yesterday: '2 %',
+    diff_from_yesterday: '2 %'
   },
   {
     id: 2,
     time: '10 am',
     revenue: '$23,789',
-    diff_from_yesterday: '3 %',
+    diff_from_yesterday: '3 %'
   },
   {
     id: 3,
     time: '11 am',
     revenue: '$56,142',
-    diff_from_yesterday: '10 %',
+    diff_from_yesterday: '10 %'
   },
   {
     id: 4,
     time: '12 am',
     revenue: '$38,735',
-    diff_from_yesterday: '1 %',
+    diff_from_yesterday: '1 %'
   },
   {
     id: 5,
     time: '13 pm',
     revenue: '$63,542',
-    diff_from_yesterday: '0 %',
+    diff_from_yesterday: '0 %'
   }]
   const tableColumns2 = ['Id', 'Time', 'Average_active_H2_Station']
   const tableData2 = [{
